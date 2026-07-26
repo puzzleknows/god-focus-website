@@ -1,0 +1,69 @@
+UNLOCK WITH PRAYER — LEGAL SITE SETUP
+
+FILES
+- index.html
+- privacy.html
+- terms.html
+- support.html
+- styles.css
+
+REPLACE THESE PLACEHOLDERS IN CURSOR
+1. [DEVELOPER NAME]
+   Use the same legal individual/company name shown as your App Store seller.
+
+2. [SUPPORT EMAIL]
+   Use an email you actively monitor, for example:
+   unlockwithprayer.support@gmail.com
+   or support@unlockwithprayer.app
+
+3. Check the effective date. Change July 25, 2026 if you publish later.
+
+FAST REPLACE IN CURSOR
+- Open the folder in Cursor.
+- Press Cmd+Shift+F on Mac.
+- Search: [DEVELOPER NAME]
+- Replace All with your legal seller/developer name.
+- Search: [SUPPORT EMAIL]
+- Replace All with your support email.
+- Save all files.
+
+GITHUB PAGES
+1. Create a public GitHub repository named:
+   unlock-with-prayer-site
+
+2. Upload all five files to the repository root.
+
+3. Open:
+   Repository Settings → Pages
+
+4. Under Build and deployment:
+   Source: Deploy from a branch
+   Branch: main
+   Folder: / (root)
+   Click Save.
+
+5. Wait a few minutes. GitHub will show your public URL, usually:
+   https://YOUR-GITHUB-USERNAME.github.io/unlock-with-prayer-site/
+
+APP STORE CONNECT URLS
+Privacy Policy:
+https://YOUR-GITHUB-USERNAME.github.io/unlock-with-prayer-site/privacy.html
+
+Terms of Use:
+https://YOUR-GITHUB-USERNAME.github.io/unlock-with-prayer-site/terms.html
+
+Support URL:
+https://YOUR-GITHUB-USERNAME.github.io/unlock-with-prayer-site/support.html
+
+APP DESCRIPTION LINKS
+Privacy Policy: https://.../privacy.html
+Terms of Use: https://.../terms.html
+Support: https://.../support.html
+
+IMPORTANT
+- Open every URL in a private/incognito browser window before submitting.
+- Make sure the pages load without requiring login.
+- Keep the support email active.
+- Update the Privacy Policy and App Store privacy answers before adding
+  analytics, crash reporting, advertising SDKs, accounts, cloud sync,
+  or external AI services.
