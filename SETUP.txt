@@ -1,69 +1,44 @@
-UNLOCK WITH PRAYER — LEGAL SITE SETUP
+GOD FOCUS — GITHUB PAGES SITE
+
+This repository is the public static website for the iOS app God Focus.
+
+GitHub repository:
+unlockwithprayer/unlockwithprayer.github.io
+
+Current public host:
+https://unlockwithprayer.github.io/
 
 FILES
-- index.html
-- privacy.html
-- terms.html
-- support.html
-- styles.css
-
-REPLACE THESE PLACEHOLDERS IN CURSOR
-1. [DEVELOPER NAME]
-   Use the same legal individual/company name shown as your App Store seller.
-
-2. [SUPPORT EMAIL]
-   Use an email you actively monitor, for example:
-   unlockwithprayer.support@gmail.com
-   or support@unlockwithprayer.app
-
-3. Check the effective date. Change July 25, 2026 if you publish later.
-
-FAST REPLACE IN CURSOR
-- Open the folder in Cursor.
-- Press Cmd+Shift+F on Mac.
-- Search: [DEVELOPER NAME]
-- Replace All with your legal seller/developer name.
-- Search: [SUPPORT EMAIL]
-- Replace All with your support email.
-- Save all files.
+- index.html     Homepage
+- privacy.html   Privacy Policy
+- terms.html     Terms of Use
+- support.html   Support
+- styles.css     Shared stylesheet
 
 GITHUB PAGES
-1. Create a public GitHub repository named:
-   unlock-with-prayer-site
+- Source: Deploy from a branch
+- Branch: main
+- Folder: / (root)
+- This is a user/organization Pages site, so pages are served from the domain root.
 
-2. Upload all five files to the repository root.
+PUBLIC PATHS
+- /                 index.html
+- /privacy.html
+- /terms.html
+- /support.html
 
-3. Open:
-   Repository Settings → Pages
+APP STORE
+- App ID: 6791024734
+- URL: https://apps.apple.com/us/app/unlock-with-prayer-god-focus/id6791024734
 
-4. Under Build and deployment:
-   Source: Deploy from a branch
-   Branch: main
-   Folder: / (root)
-   Click Save.
+SUPPORT EMAIL
+Official contact:
+puzdevelop@gmail.com
 
-5. Wait a few minutes. GitHub will show your public URL, usually:
-   https://YOUR-GITHUB-USERNAME.github.io/unlock-with-prayer-site/
-
-APP STORE CONNECT URLS
-Privacy Policy:
-https://YOUR-GITHUB-USERNAME.github.io/unlock-with-prayer-site/privacy.html
-
-Terms of Use:
-https://YOUR-GITHUB-USERNAME.github.io/unlock-with-prayer-site/terms.html
-
-Support URL:
-https://YOUR-GITHUB-USERNAME.github.io/unlock-with-prayer-site/support.html
-
-APP DESCRIPTION LINKS
-Privacy Policy: https://.../privacy.html
-Terms of Use: https://.../terms.html
-Support: https://.../support.html
+Public pages label this as God Focus Support.
 
 IMPORTANT
-- Open every URL in a private/incognito browser window before submitting.
-- Make sure the pages load without requiring login.
-- Keep the support email active.
-- Update the Privacy Policy and App Store privacy answers before adding
-  analytics, crash reporting, advertising SDKs, accounts, cloud sync,
-  or external AI services.
+- Keep this a static HTML + CSS site.
+- Do not add a build system, analytics scripts, or tracking pixels to the website.
+- Open every public URL in a private browser window after deploy.
+- Update Privacy Policy before adding new app data practices.

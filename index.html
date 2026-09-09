@@ -3,76 +3,239 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Unlock with Prayer</title>
-  <meta name="description" content="Official website for Unlock with Prayer — an iPhone app that pauses selected apps so you can complete a short prayer and Scripture reflection before opening them.">
+  <title>God Focus — Scripture before social media.</title>
+  <meta name="description" content="God Focus is a Christian screen time and Bible focus app. Schedule a Faith Pause, read Scripture, pray, and return with intention.">
+  <meta name="theme-color" content="#FAF8F2">
+  <meta property="og:title" content="God Focus — Scripture before social media.">
+  <meta property="og:description" content="Put God before the scroll. A Christian app blocker and Bible focus app built around scheduled Faith Pauses.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-<header class="site-header">
-  <nav class="nav">
-    <a class="brand" href="index.html">Unlock with Prayer</a>
-    <div class="nav-links">
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary">
+      <a class="brand" href="./">God Focus</a>
+      <input class="nav-toggle" id="nav-toggle" type="checkbox">
+      <label class="nav-toggle-btn" for="nav-toggle">Menu</label>
+      <ul class="nav-links">
+        <li><a href="./#how-it-works">How It Works</a></li>
+        <li><a href="./#bible">Bible</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="support.html">Support</a></li>
+        <li><a class="nav-download" href="https://apps.apple.com/us/app/unlock-with-prayer-god-focus/id6791024734">Download</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="hero-copy-col">
+        <p class="eyebrow">God Focus</p>
+        <h1>Scripture before social media.</h1>
+        <p class="lede">Put God before the scroll.</p>
+        <p class="hero-copy">Schedule a Faith Pause for the apps that pull at your attention. When it’s time, pause, read Scripture, pray, and return with intention.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="https://apps.apple.com/us/app/unlock-with-prayer-god-focus/id6791024734">Download on the App Store</a>
+          <a class="button button-secondary" href="#how-it-works">How it works</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <svg class="motif motif-hero" viewBox="0 0 160 160" fill="none" aria-hidden="true">
+          <circle cx="80" cy="80" r="68" stroke="currentColor" stroke-width="0.9" stroke-dasharray="320 108" stroke-linecap="round"/>
+          <path d="M80 58v44M64 80h32" stroke="currentColor" stroke-width="0.9" stroke-linecap="round"/>
+          <path d="M118 46l6-9M128 58l10-3M39 118l-8 6" stroke="currentColor" stroke-width="0.8" stroke-linecap="round"/>
+        </svg>
+        <div class="hero-shots">
+          <figure class="shot shot-hero-back">
+            <img class="shot-img" src="assets/screenshots/bible-scroll.png" alt="" width="470" height="1024">
+          </figure>
+          <figure class="shot shot-hero-main">
+            <img class="shot-img" src="assets/screenshots/amen-unlock.jpg" alt="God Focus Amen Unlock screen: Read, Pray, Unlock." width="470" height="1024" fetchpriority="high">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="statement" aria-labelledby="statement-title">
+      <div class="statement-inner">
+        <h2 class="statement-title" id="statement-title">You don’t have to quit social media.<br><em>Just give God the first moment.</em></h2>
+      </div>
+    </section>
+
+    <div class="motif-divider" aria-hidden="true">
+      <svg class="motif motif-small" viewBox="0 0 80 80" fill="none">
+        <circle cx="40" cy="40" r="28" stroke="currentColor" stroke-width="0.9" stroke-dasharray="132 44" stroke-linecap="round"/>
+        <path d="M40 28v24M32 40h16" stroke="currentColor" stroke-width="0.9" stroke-linecap="round"/>
+      </svg>
+    </div>
+
+    <section class="section" id="how-it-works">
+      <div class="section-header">
+        <p class="eyebrow">How it works</p>
+        <h2>A scheduled pause for faith.</h2>
+        <p>God Focus helps you put Scripture and prayer before distracting apps through scheduled Faith Pauses.</p>
+      </div>
+
+      <ol class="flow-visual">
+        <li class="flow-node">
+          <span class="flow-icon">
+            <svg viewBox="0 0 32 32" fill="none" aria-hidden="true">
+              <circle cx="16" cy="16" r="11" stroke="currentColor" stroke-width="1.4"/>
+              <path d="M16 10v6.2l4 2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <span class="flow-name">Pause</span>
+        </li>
+        <li class="flow-node">
+          <span class="flow-icon">
+            <svg viewBox="0 0 32 32" fill="none" aria-hidden="true">
+              <path d="M7 8.5c3.2-.2 5.4 1.2 9 1.2s5.8-1.4 9-1.2v15.2c-3.2-.2-5.4 1.2-9 1.2s-5.8-1.4-9-1.2V8.5z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
+              <path d="M16 9.7v14.3" stroke="currentColor" stroke-width="1.4"/>
+            </svg>
+          </span>
+          <span class="flow-name">Read</span>
+        </li>
+        <li class="flow-node">
+          <span class="flow-icon">
+            <svg viewBox="0 0 32 32" fill="none" aria-hidden="true">
+              <circle cx="16" cy="16" r="11" stroke="currentColor" stroke-width="1.4" stroke-dasharray="58 11" stroke-linecap="round"/>
+              <path d="M16 10.5v11M11.5 16h9" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <span class="flow-name">Pray</span>
+        </li>
+        <li class="flow-node">
+          <span class="flow-icon">
+            <svg viewBox="0 0 32 32" fill="none" aria-hidden="true">
+              <rect x="9" y="14.5" width="14" height="10" rx="2" stroke="currentColor" stroke-width="1.4"/>
+              <path d="M12 14.5V11.2a4 4 0 0 1 7.4-2.1" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <span class="flow-name">Unlock</span>
+        </li>
+      </ol>
+
+      <div class="flow-evidence">
+        <figure class="shot shot-crop shot-crop-read">
+          <img class="shot-img" src="assets/screenshots/bible-scroll.png" alt="" width="470" height="1024" loading="lazy">
+        </figure>
+        <figure class="shot shot-crop shot-crop-pray">
+          <img class="shot-img" src="assets/screenshots/faith-pause-prayer.jpg" alt="" width="470" height="1024" loading="lazy">
+        </figure>
+        <figure class="shot shot-crop shot-crop-unlock">
+          <img class="shot-img" src="assets/screenshots/amen-unlock.jpg" alt="" width="470" height="1024" loading="lazy">
+        </figure>
+      </div>
+
+      <div class="flow-grid">
+        <article class="step">
+          <span class="step-label">Schedule</span>
+          <h3>Choose what matters</h3>
+          <p>Select the apps and Faith Pause times that belong to this rhythm.</p>
+        </article>
+        <article class="step">
+          <span class="step-label">Pause</span>
+          <h3>The moment arrives</h3>
+          <p>At your chosen time, Apple Screen Time pauses the selected apps.</p>
+        </article>
+        <article class="step">
+          <span class="step-label">Read</span>
+          <h3>Open Scripture</h3>
+          <p>From a blocked-app flow, begin with a short passage of Scripture.</p>
+        </article>
+        <article class="step">
+          <span class="step-label">Pray</span>
+          <h3>Stay a moment</h3>
+          <p>Take a short time to pray before returning to what you opened.</p>
+        </article>
+        <article class="step">
+          <span class="step-label">Return</span>
+          <h3>Continue with intention</h3>
+          <p>Complete the Faith Pause, then return to the app you chose to protect.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="bible">
+      <div class="section-header">
+        <p class="eyebrow">Bible</p>
+        <h2>More than an app blocker.</h2>
+        <p>God Focus is also a calm place to read Scripture, discover passages, and keep a simple daily rhythm.</p>
+      </div>
+      <div class="bible-feature">
+        <figure class="shot shot-feature">
+          <img class="shot-img" src="assets/screenshots/bible-scroll.png" alt="God Focus Bible Scroll reading Mark 1:1." width="470" height="1024" loading="lazy">
+        </figure>
+        <div class="bible-points">
+          <article>
+            <h3>Scroll</h3>
+            <p>Read Scripture in a quiet vertical reading experience.</p>
+          </article>
+          <article>
+            <h3>Books</h3>
+            <p>Open chapters and continue reading in a familiar book-and-chapter view.</p>
+          </article>
+          <article>
+            <h3>Discover</h3>
+            <p>Enter curated Scripture stories and passages when you want a place to begin.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="rhythm">
+        <div class="rhythm-copy">
+          <p class="eyebrow">90 Days with Scripture</p>
+          <h2>Small moments become a rhythm.</h2>
+          <p>Each qualifying day with Scripture moves your 90 Days progress forward. It is a cumulative reading rhythm, not a promise of transformation. A day streak is there if you want a quieter measure of consistency. You can also save verses to return to later.</p>
+        </div>
+        <figure class="shot shot-rhythm">
+          <img class="shot-img" src="assets/screenshots/home-90-days.jpg" alt="God Focus home screen with 90 Days with Scripture." width="470" height="1024" loading="lazy">
+        </figure>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="privacy-band">
+        <svg class="privacy-mark" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+          <path d="M24 7l14 5v12.4c0 8.4-5.8 15.6-14 17.6-8.2-2-14-9.2-14-17.6V12l14-5z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>
+          <circle cx="24" cy="23" r="7.5" stroke="currentColor" stroke-width="1.1" stroke-dasharray="38 9" stroke-linecap="round"/>
+        </svg>
+        <p class="eyebrow">Designed around privacy</p>
+        <h2>Your distractions are personal. They should stay that way.</h2>
+        <p>God Focus uses Apple’s Screen Time APIs to apply pauses to the apps you choose. The protected-app identities and Apple FamilyControls tokens used for shielding stay on your device. They are not sent to God Focus product analytics.</p>
+        <p><a href="privacy.html">Read the Privacy Policy</a></p>
+      </div>
+    </section>
+
+    <section class="section account">
+      <h2>No account.<br>No social profile.<br>Just begin.</h2>
+    </section>
+  </main>
+
+  <section class="final-cta" aria-labelledby="final-cta-title">
+    <svg class="motif motif-cta" viewBox="0 0 80 80" fill="none" aria-hidden="true">
+      <circle cx="40" cy="40" r="28" stroke="currentColor" stroke-width="0.9" stroke-dasharray="132 44" stroke-linecap="round"/>
+      <path d="M40 28v24M32 40h16" stroke="currentColor" stroke-width="0.9" stroke-linecap="round"/>
+    </svg>
+    <p class="eyebrow">God Focus</p>
+    <h2 id="final-cta-title">Put God before the scroll.</h2>
+    <p>Scripture before social media.</p>
+    <a class="button button-primary" href="https://apps.apple.com/us/app/unlock-with-prayer-god-focus/id6791024734">Download on the App Store</a>
+  </section>
+
+  <footer class="site-footer">
+    <nav aria-label="Footer">
       <a href="privacy.html">Privacy</a>
       <a href="terms.html">Terms</a>
       <a href="support.html">Support</a>
-    </div>
-  </nav>
-</header>
-
-<main class="container">
-  <section class="hero">
-    <h1>Pause distractions.<br><span class="accent">Make time for God.</span></h1>
-    <p>Unlock with Prayer helps you pause selected applications before opening them, complete a short prayer and Scripture reflection, and build faith-focused habits on your iPhone.</p>
-  </section>
-
-  <section class="card">
-    <h2>About the App</h2>
-    <p>Unlock with Prayer is designed for <strong>iPhone</strong> and requires <strong>iOS 17.0 or later</strong>. No account or login is required. A functional free tier is available, and an optional Pro subscription unlocks additional features.</p>
-    <ul>
-      <li>Designed for iPhone</li>
-      <li>Requires iOS 17.0 or later</li>
-      <li>No user account required</li>
-      <li>Free tier and optional Pro subscription</li>
-    </ul>
-  </section>
-
-  <section class="card">
-    <h2>Features</h2>
-    <ul>
-      <li><strong>Prayer Locks</strong> — Pause selected apps and unlock them temporarily after completing a prayer pause.</li>
-      <li><strong>Scripture and prayer pauses</strong> — Short reflections to help you pause before opening distracting apps.</li>
-      <li><strong>Scheduled Times and Every App Open</strong> — Choose when Prayer Locks apply: on a schedule or each time a selected app is opened.</li>
-      <li><strong>Bible reading</strong> — Read Scripture, explore topics, and track reading progress on your device.</li>
-      <li><strong>Journey, streaks, and achievements</strong> — Follow your faith journey and celebrate consistent prayer habits.</li>
-      <li><strong>Faith Reminders</strong> — Optional local reminders to help you stay consistent.</li>
-      <li><strong>Pro subscription</strong> — Optional paid access to additional features, managed through the App Store.</li>
-    </ul>
-  </section>
-
-  <section class="grid">
-    <article class="card">
-      <h2>Privacy</h2>
-      <p>Learn how the app handles local data, Screen Time selections, subscriptions, Superwall, and support communications.</p>
-      <a class="button" href="privacy.html">Privacy Policy</a>
-    </article>
-    <article class="card">
-      <h2>Terms</h2>
-      <p>Review the rules for using the app, Prayer Locks, subscriptions, and auto-renewable billing through Apple.</p>
-      <a class="button" href="terms.html">Terms of Use</a>
-    </article>
-    <article class="card">
-      <h2>Support</h2>
-      <p>Get help with Screen Time access, notifications, subscriptions, Emergency Unlock, and restoring purchases.</p>
-      <a class="button" href="support.html">Get Support</a>
-    </article>
-  </section>
-</main>
-
-<footer>
-  © 2026 Unlock with Prayer · <a href="privacy.html">Privacy Policy</a> ·
-  <a href="terms.html">Terms of Use</a> · <a href="support.html">Support</a>
-</footer>
-
+    </nav>
+    <p>© 2026 God Focus</p>
+  </footer>
 </body>
 </html>
