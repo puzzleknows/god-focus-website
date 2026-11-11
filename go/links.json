@@ -1,0 +1,50 @@
+{
+  "link_version": 1,
+  "defaults": {
+    "ios_destination": "https://apps.apple.com/app/id6791024734",
+    "fallback_destination": "https://godfocus.puzdev.com/",
+    "website": "https://godfocus.puzdev.com/"
+  },
+  "links": {
+    "a1": {
+      "label": "Source A",
+      "channel": "personal",
+      "placement": "direct",
+      "ios_destination": "https://apps.apple.com/app/id6791024734",
+      "enabled": true,
+      "is_qr": false
+    },
+    "a2": {
+      "label": "Source B",
+      "channel": "personal",
+      "placement": "direct",
+      "ios_destination": "https://apps.apple.com/app/id6791024734",
+      "enabled": true,
+      "is_qr": false
+    },
+    "y1": {
+      "label": "YouTube",
+      "channel": "youtube",
+      "placement": "video",
+      "ios_destination": "https://apps.apple.com/app/id6791024734",
+      "enabled": true,
+      "is_qr": false
+    },
+    "i1": {
+      "label": "Instagram",
+      "channel": "instagram",
+      "placement": "bio",
+      "ios_destination": "https://apps.apple.com/app/id6791024734",
+      "enabled": true,
+      "is_qr": false
+    },
+    "q1": {
+      "label": "QR 1",
+      "channel": "qr",
+      "placement": "print",
+      "ios_destination": "https://apps.apple.com/app/id6791024734",
+      "enabled": true,
+      "is_qr": true
+    }
+  }
+}
