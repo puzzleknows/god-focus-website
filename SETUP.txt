@@ -36,7 +36,7 @@ SUPPORT EMAIL
 godfocus@puzdev.com
 
 COMPANY
-Puzzle Tech Studios LLC (PUZDEV brand)
+Puzzle Tech Studios LLC
 
 IMPORTANT
 - Keep this a static HTML + CSS site.
