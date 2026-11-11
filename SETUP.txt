@@ -1,44 +1,44 @@
-GOD FOCUS — GITHUB PAGES SITE
+GOD FOCUS — PUBLIC WEBSITE
 
-This repository is the public static website for the iOS app God Focus.
+Repository:
+puzzleknows/god-focus-website
 
-GitHub repository:
-unlockwithprayer/unlockwithprayer.github.io
+Hosting:
+GitHub Pages (branch: main, folder: /)
 
-Current public host:
-https://unlockwithprayer.github.io/
+Custom domain (after DNS):
+https://godfocus.puzdev.com
 
-FILES
-- index.html     Homepage
-- privacy.html   Privacy Policy
-- terms.html     Terms of Use
-- support.html   Support
-- styles.css     Shared stylesheet
-
-GITHUB PAGES
-- Source: Deploy from a branch
-- Branch: main
-- Folder: / (root)
-- This is a user/organization Pages site, so pages are served from the domain root.
+Fallback GitHub Pages URL:
+https://puzzleknows.github.io/god-focus-website/
 
 PUBLIC PATHS
 - /                 index.html
-- /privacy.html
-- /terms.html
-- /support.html
+- /privacy/         Privacy Policy
+- /terms/           Terms of Use
+- /support/         Support
+Legacy .html paths redirect to the clean URLs above.
+
+DNS (create manually — do not automate from this repo)
+TYPE:   CNAME
+NAME:   godfocus
+VALUE:  puzzleknows.github.io
+
+Then in GitHub → Settings → Pages → Custom domain:
+godfocus.puzdev.com
+Enable “Enforce HTTPS” after the certificate is ready.
 
 APP STORE
 - App ID: 6791024734
-- URL: https://apps.apple.com/us/app/unlock-with-prayer-god-focus/id6791024734
+- URL: https://apps.apple.com/us/app/god-focus-bible-scroll/id6791024734
 
 SUPPORT EMAIL
-Official contact:
-puzdevelop@gmail.com
+godfocus@puzdev.com
 
-Public pages label this as God Focus Support.
+COMPANY
+Puzzle Tech Studios LLC (PUZDEV brand)
 
 IMPORTANT
 - Keep this a static HTML + CSS site.
 - Do not add a build system, analytics scripts, or tracking pixels to the website.
 - Open every public URL in a private browser window after deploy.
-- Update Privacy Policy before adding new app data practices.

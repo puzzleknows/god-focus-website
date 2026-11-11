@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy — God Focus</title>
+  <meta name="description" content="Privacy Policy for God Focus. How optional accounts, Firebase Authentication, Cloud Firestore backup, Screen Time, PostHog, and App Store purchases are handled.">
+  <meta name="theme-color" content="#FAF8F2">
+  <link rel="canonical" href="https://godfocus.puzdev.com/privacy">
+  <meta property="og:title" content="Privacy Policy — God Focus">
+  <meta property="og:description" content="How God Focus handles local data, optional cloud backup, Screen Time, analytics, and App Store purchases.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://godfocus.puzdev.com/privacy">
+  <meta name="twitter:card" content="summary">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary">
+      <a class="brand" href="../">God Focus</a>
+      <input class="nav-toggle" id="nav-toggle" type="checkbox">
+      <label class="nav-toggle-btn" for="nav-toggle">Menu</label>
+      <ul class="nav-links">
+        <li><a href="../#how-it-works">How It Works</a></li>
+        <li><a href="../#bible">Bible</a></li>
+        <li><a href="../privacy/" aria-current="page">Privacy</a></li>
+        <li><a href="../support/">Support</a></li>
+        <li><a class="nav-download" href="https://apps.apple.com/us/app/god-focus-bible-scroll/id6791024734">Download</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <header class="legal-hero">
+      <p class="eyebrow">God Focus</p>
+      <h1>Privacy Policy</h1>
+      <p>Last updated: November 2026</p>
+    </header>
+
+    <article class="legal-body">
+      <h2>1. Introduction</h2>
+      <p>This Privacy Policy explains how <strong>Puzzle Tech Studios LLC</strong> (“we,” “us,” or “our”), operating under the brand <strong>PUZDEV</strong>, handles information in connection with the iOS app <strong>God Focus</strong> (the “App”). God Focus is designed for iPhone and requires iOS 17.0 or later. It is available in English and Spanish.</p>
+      <p>God Focus helps you put Scripture and prayer before distracting apps through scheduled Faith Pauses. <strong>God Focus works without an account.</strong> An optional sign-in is available only if you choose to protect and restore portable progress. Purchases are processed through Apple’s App Store and StoreKit.</p>
+
+      <h2>2. Information Stored on Your Device</h2>
+      <p>God Focus is designed to keep much of your experience on your iPhone. The App may store the following information locally:</p>
+      <ul>
+        <li>Faith Pause schedules</li>
+        <li>onboarding and setup state</li>
+        <li>Screen Time selections used to protect apps you choose</li>
+        <li>Bible reading position and reading preferences</li>
+        <li>Discover and journey state</li>
+        <li>saved verses</li>
+        <li>Scripture activity</li>
+        <li>streak and 90 Days with Scripture progress</li>
+        <li>Faith Reminder settings</li>
+        <li>language preference</li>
+        <li>a local subscription-status cache used alongside Apple’s verified StoreKit state</li>
+      </ul>
+      <p>Deleting the App generally removes this app-local data from your iPhone. It does not cancel an Apple subscription, revoke Screen Time authorization by itself, or delete information already sent to third-party services.</p>
+
+      <h2>3. Optional Account and Cloud Backup</h2>
+      <p>An account is optional. If you sign in with <strong>Sign in with Apple</strong> or <strong>Sign in with Google</strong>, God Focus uses <strong>Firebase Authentication</strong> to verify your sign-in and may store a portable progress backup in <strong>Cloud Firestore</strong>.</p>
+      <p>At a high level, that portable progress may include Scripture activity, Bible reading position and preferences, Discover or journey state, saved verses, language preference, and related Faith Reminder preferences — so you can restore progress after reinstalling the App or moving to a new iPhone. It is not a full device backup and is not required to use Faith Pause, Bible reading, or Home.</p>
+      <p>Signing out does not delete Scripture progress stored locally on your iPhone. Deleting your account removes the associated cloud backup and sign-in according to the App’s current Delete Account flow; local progress on the device stays unless you clear it separately.</p>
+
+      <h2>4. Screen Time and Protected Apps</h2>
+      <p>God Focus uses Apple’s Family Controls, Managed Settings, and Device Activity APIs so you can choose apps to pause during a Faith Pause. Authorization is individual. God Focus is not a child-monitoring, parental-surveillance, or employee-monitoring product.</p>
+      <p>The protected-app identities and Apple FamilyControls tokens used for shielding remain on your device. They are not sent to God Focus product analytics. Those tokens may be shared only with the App’s extensions through Apple App Group storage so pausing and unlocking can work across the App and its extensions.</p>
+      <p>We do not receive a readable remote list of your installed or selected applications.</p>
+
+      <h2>5. Bible and Faith Pause Activity</h2>
+      <p>The App may store Scripture activity, reading position, Discover or journey progress, saved verses, streak information, and 90 Days progress locally on your device so those features can work. If you enable optional Backup &amp; Sync, related portable progress may also be stored in Cloud Firestore as described above.</p>
+      <p>The current analytics design does not send Scripture text, prayer text, or Bible verse contents to PostHog.</p>
+
+      <h2>6. Product Analytics</h2>
+      <p>God Focus uses <a href="https://posthog.com/" target="_blank" rel="noopener noreferrer">PostHog</a> for privacy-minimized product analytics. This may include events related to onboarding, paywall presentation, setup, and activation funnels.</p>
+      <p>The current analytics design does <strong>not</strong> send:</p>
+      <ul>
+        <li>Scripture text</li>
+        <li>prayer text</li>
+        <li>Bible verse contents</li>
+        <li>protected-app identities</li>
+        <li>FamilyControls tokens</li>
+        <li>receipts</li>
+        <li>email addresses</li>
+        <li>phone numbers</li>
+        <li>contacts</li>
+        <li>precise location</li>
+        <li>advertising identifiers, including IDFA</li>
+      </ul>
+      <p>Session Replay is disabled. God Focus does not use advertising ID analytics. See <a href="https://posthog.com/privacy" target="_blank" rel="noopener noreferrer">PostHog’s privacy policy</a>.</p>
+
+      <h2>7. Purchases and Subscriptions</h2>
+      <p>Purchases and optional God Focus Pro subscriptions are processed by Apple through the App Store and StoreKit. Apple handles payment, billing, refunds, and entitlement under its own terms and privacy policies. God Focus does not receive your full payment-card information.</p>
+      <p>Deleting the App does not cancel a subscription associated with your Apple ID. Manage or cancel subscriptions through Apple.</p>
+
+      <h2>8. Notifications</h2>
+      <p>If you enable them, the App may schedule optional local Faith Reminders on your device. Notification permission is optional. The App does not use remote push notifications for Faith Reminders in the current product.</p>
+
+      <h2>9. Third-Party Services</h2>
+      <ul>
+        <li><strong>Apple.</strong> App Store distribution, StoreKit purchases, Sign in with Apple (when you choose it), and Screen Time / Family Controls APIs.</li>
+        <li><strong>Google.</strong> Google Sign-In when you choose Continue with Google for optional Backup &amp; Sync.</li>
+        <li><strong>Firebase (Google).</strong> Firebase Authentication and Cloud Firestore for optional account sign-in and portable progress backup.</li>
+        <li><strong>PostHog.</strong> Product analytics, as described above. <a href="https://posthog.com/privacy" target="_blank" rel="noopener noreferrer">PostHog privacy policy</a>.</li>
+        <li><strong>Superwall.</strong> Paywall presentation and subscription-related attributes. <a href="https://superwall.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer">Superwall privacy policy</a>.</li>
+      </ul>
+      <p>If you contact God Focus Support, we receive the information you choose to send so we can respond and improve support.</p>
+
+      <h2>10. Data Sharing</h2>
+      <p>We do not sell your personal information. We do not use advertising SDKs or Identifier for Advertisers (IDFA) analytics. The App does not request camera, microphone, contacts, or precise-location access as part of the core product.</p>
+      <p>Information may be processed by Apple, Google/Firebase, PostHog, or Superwall as needed to provide their services. We may also disclose information if required by law or to protect rights, safety, or the integrity of the App.</p>
+
+      <h2>11. Data Retention</h2>
+      <p>Information stored locally on your device generally remains until you change it in the App, reset relevant settings, or delete the App.</p>
+      <p>Optional cloud backups remain associated with your signed-in account until you delete the account or the backup is otherwise removed through the App. Deleting the App from a device does not, by itself, delete a cloud backup that remains tied to your account.</p>
+      <p>Deleting the App also does not, by itself, cancel Apple purchase entitlements, revoke Screen Time authorization in iOS, or erase analytics already transmitted to providers under their policies.</p>
+
+      <h2>12. Your Choices</h2>
+      <ul>
+        <li>You may use God Focus without signing in.</li>
+        <li>You may sign in, sign out, back up, restore, or delete your optional account from God Focus → Settings → Backup &amp; Sync.</li>
+        <li>You may decline Screen Time or notification permission, although some features will not work without Screen Time access.</li>
+        <li>You may manage or cancel subscriptions through Apple.</li>
+        <li>You may delete locally stored App data by deleting the App.</li>
+        <li>You may contact us with privacy questions using the address below.</li>
+      </ul>
+
+      <h2>13. Children’s Privacy</h2>
+      <p>The App is not designed to knowingly collect personal information from children. No God Focus account or social profile is required. The App is not a parental-monitoring or child-surveillance product. If you believe a child has sent personal information to us through support, contact us so we can review and delete it where appropriate.</p>
+
+      <h2>14. Security</h2>
+      <p>We take reasonable measures to protect information within our control, including optional cloud backups processed through Firebase. Because much of your App data is stored locally, you are also responsible for securing your device through the protections available in iOS. No method of storage or transmission is completely secure.</p>
+
+      <h2>15. Changes to This Policy</h2>
+      <p>We may update this Privacy Policy when the App, our practices, or legal requirements change. We will update the date at the top of this page. Continued use of the App after an update means you accept the revised Policy to the extent permitted by law.</p>
+
+      <h2>16. Contact</h2>
+      <p>
+        Company: <strong>Puzzle Tech Studios LLC</strong><br>
+        Brand: <strong>PUZDEV</strong><br>
+        Product: <strong>God Focus</strong><br>
+        God Focus Support:<br>
+        <a href="mailto:godfocus@puzdev.com?subject=God%20Focus%20Support">godfocus@puzdev.com</a>
+      </p>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <nav aria-label="Footer">
+      <a href="../privacy/" aria-current="page">Privacy</a>
+      <a href="../terms/">Terms</a>
+      <a href="../support/">Support</a>
+    </nav>
+    <p>© 2026 Puzzle Tech Studios LLC. All rights reserved.</p>
+    <p class="small">A PUZDEV product</p>
+  </footer>
+</body>
+</html>

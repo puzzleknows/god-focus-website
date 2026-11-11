@@ -868,3 +868,5 @@ main { display: block; }
     transition: none !important;
   }
 }
+
+.site-footer .small{margin-top:.35rem;opacity:.72;font-size:.85rem;}
