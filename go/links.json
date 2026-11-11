@@ -10,7 +10,7 @@
       "label": "Source A",
       "channel": "personal",
       "placement": "direct",
-      "ios_destination": "https://apps.apple.com/app/id6791024734",
+      "ios_destination": "https://apps.apple.com/app/apple-store/id6791024734?pt=128735731&ct=GF-A1&mt=8",
       "enabled": true,
       "is_qr": false
     },
@@ -18,7 +18,7 @@
       "label": "Source B",
       "channel": "personal",
       "placement": "direct",
-      "ios_destination": "https://apps.apple.com/app/id6791024734",
+      "ios_destination": "https://apps.apple.com/app/apple-store/id6791024734?pt=128735731&ct=GF-A2&mt=8",
       "enabled": true,
       "is_qr": false
     },
