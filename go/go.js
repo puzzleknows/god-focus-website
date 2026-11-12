@@ -1,12 +1,12 @@
 /**
- * God Focus /go/ smart links — device routing + lightweight attribution.
+ * God Focus /go/ smart links — App Store destinations + lightweight attribution.
+ * God Focus is iOS-only: every device is sent to the configured App Store URL.
  * Analytics failure never blocks redirect.
  */
 (function () {
   "use strict";
 
   var APP_STORE = "https://apps.apple.com/app/id6791024734";
-  var HOME = "https://godfocus.puzdev.com/";
   var GO_HOME = "https://godfocus.puzdev.com/go/";
   var LINKS_URL = "/go/links.json";
 
@@ -52,7 +52,7 @@
       var u = new URL(String(url || ""), location.href);
       if (u.protocol === "https:" || u.protocol === "http:") return u.href;
     } catch (e) {}
-    return fallback || HOME;
+    return fallback || APP_STORE;
   }
 
   function setFallback(href) {
@@ -129,25 +129,18 @@
     });
   }
 
-  function pickDestination(iosUrl, fallbackUrl) {
-    if (isAppleMobile()) return safeUrl(iosUrl, APP_STORE);
-    return safeUrl(fallbackUrl, HOME);
-  }
-
   function resolve(registry, code) {
     var defaults = (registry && registry.defaults) || {};
-    var iosDefault = defaults.ios_destination || APP_STORE;
-    var webDefault = defaults.fallback_destination || defaults.website || HOME;
+    var storeDefault = defaults.ios_destination || defaults.destination || APP_STORE;
     var version = registry && registry.link_version != null ? registry.link_version : 1;
 
     if (!code) {
-      var rootDest = pickDestination(iosDefault, webDefault);
       return {
         source_id: "root",
         channel: "direct",
         placement: "go_root",
         is_qr: false,
-        destination: rootDest,
+        destination: safeUrl(storeDefault, APP_STORE),
         link_version: version,
         valid: true
       };
@@ -155,7 +148,7 @@
 
     var entry = registry && registry.links ? registry.links[code] : null;
     if (!entry || entry.enabled === false) {
-      // Invalid / disabled → soft-land on /go/ (device routing still applies there).
+      // Invalid / disabled → soft-land on /go/ (which then goes to App Store).
       return {
         source_id: code,
         channel: "unknown",
@@ -167,14 +160,13 @@
       };
     }
 
-    var iosDest = entry.ios_destination || entry.destination || iosDefault;
-    var webDest = entry.fallback_destination || webDefault;
+    var dest = entry.ios_destination || entry.destination || storeDefault;
     return {
       source_id: code,
       channel: entry.channel || "unknown",
       placement: entry.placement || "unknown",
       is_qr: !!entry.is_qr,
-      destination: pickDestination(iosDest, webDest),
+      destination: safeUrl(dest, APP_STORE),
       link_version: version,
       valid: true
     };
@@ -213,7 +205,7 @@
   }
 
   function boot() {
-    setFallback(isAppleMobile() ? APP_STORE : HOME);
+    setFallback(APP_STORE);
     fetch(LINKS_URL, { cache: "no-store", credentials: "omit" })
       .then(function (res) {
         if (!res.ok) throw new Error("links_" + res.status);
@@ -224,8 +216,7 @@
         run({
           link_version: 1,
           defaults: {
-            ios_destination: APP_STORE,
-            fallback_destination: HOME
+            ios_destination: APP_STORE
           },
           links: {}
         });

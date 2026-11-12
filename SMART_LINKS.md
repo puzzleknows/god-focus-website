@@ -8,10 +8,12 @@ No separate subdomain. No third-party shortener. Static HTML + JS on GitHub Page
 
 ## What `/go/` does
 
-1. Detects the device.
-2. On **iPhone / iPad** → God Focus App Store (`https://apps.apple.com/app/id6791024734`).
-3. On **Android / desktop / unknown** → God Focus homepage (`https://godfocus.puzdev.com/`).
+1. Looks up the source code (if any) in `go/links.json`.
+2. Sends **every device** (iPhone, iPad, Android, desktop, Instagram in-app browser, unknown) to that link’s App Store destination.
+3. God Focus is iOS-only, so `/go/` marketing links never fall back to the website homepage.
 4. Emits a lightweight PostHog event `god_focus_short_link_click` (cookie-free beacon). Analytics failure never blocks redirect.
+
+Default App Store URL: `https://apps.apple.com/app/id6791024734`
 
 ## Source codes
 
@@ -52,15 +54,20 @@ Example `links.json` entry:
 
 Edit `ios_destination` for that code in `go/links.json`.
 
-Non-iOS traffic uses `defaults.fallback_destination` (homepage) unless you set a per-link `fallback_destination`.
+All devices use that destination.
 
-## Apple Campaign Links later
+## Apple Campaign Links
 
 Keep the public URL the same (`/go/a1/`, etc.).
 
-Replace only `ios_destination` with the exact Apple Campaign Link Apple gives you (may include `pt`, `ct`, `mt`).
+Replace only `ios_destination` with the exact Apple Campaign Link (may include `pt`, `ct`, `mt`).
 
-Do not invent those tokens.
+Current examples:
+
+- `a1` → `ct=GF-A1`
+- `a2` → `ct=GF-A2`
+
+Do not invent new tokens.
 
 ## QR codes
 
@@ -107,8 +114,7 @@ Open:
 - http://localhost:8080/go/q1/
 - http://localhost:8080/go/xyz/  (should land on /go/ via 404.html when served by GitHub Pages; local python may show a raw 404 unless you use a Pages-like server)
 
-Safari responsive mode / iPhone UA: expect App Store URL.  
-Desktop UA: expect homepage.
+Any UA (iPhone, Android, desktop, Instagram): expect the App Store / campaign destination.
 
 To simulate analytics failure, temporarily break `POSTHOG_TOKEN` in `go/go.js` — redirect must still work.
 

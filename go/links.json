@@ -1,9 +1,7 @@
 {
   "link_version": 1,
   "defaults": {
-    "ios_destination": "https://apps.apple.com/app/id6791024734",
-    "fallback_destination": "https://godfocus.puzdev.com/",
-    "website": "https://godfocus.puzdev.com/"
+    "ios_destination": "https://apps.apple.com/app/id6791024734"
   },
   "links": {
     "a1": {
